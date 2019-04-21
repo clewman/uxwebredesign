@@ -351,13 +351,18 @@
   
   a:focus, a:hover, a:active {
     /* color: #128f76; */
-    color: #FA7268;
+    color: white;
   
   }
   
   .btn {
     border-width: 2px;
   }
+
+  .btn:focus,.btn:active, button:focus, button:active {
+    outline: none !important;
+    box-shadow: none;
+ }
   
   .bg-primary {
     /* background-color: #18BC9C !important; */
@@ -438,4 +443,67 @@
   .img-fluid{
     border: 1px solid #FA7268;
   }
+
+  .carouselImg {
+    min-width: 100%;
+    max-height: 500px;
+    object-fit: contain;
+    /* background-color: #fee9e7; */
+    padding:5px;
+  }
+
+  .carousel-item:img {
+    border: red solid 1px;
+  }
+  .rounded-pill {
+    letter-spacing: .1em;
+  }
+ 
   
+
+  .modalText {
+    font-size: 1.5em;
+  }
+
+  .downloadBtn {
+    padding-right: 5px;
+  }
+
+
+  .aboutExpand {
+    display:none;
+  }
+
+
+  /* font awesome */
+  .fa-chevron-right, .fa-chevron-left{
+    color: #FA7268;
+    font-size: 1.5em;
+  }
+
+  .fa-plus-circle {
+    font-size: 3em;
+  }
+
+  /* media queries */
+
+  @media (max-width: 576px){
+    .paragraph2 {
+      display: none;
+    }
+    .lead {
+      font-size: 1.15em;
+    }
+    .btn, btn {
+      margin-bottom: 10px;
+      width: 100%;
+    }
+    .profileImg {
+      width: 50%;
+    }
+    .aboutExpand {
+      display: block;
+      padding-bottom: 5%;
+    }
+  }
+ 
